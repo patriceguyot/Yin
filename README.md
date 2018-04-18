@@ -7,7 +7,7 @@ Based on the YIN alorgorithm [1]: De Cheveigné, A., & Kawahara, H. (2002). YIN,
 
 ## Licence
 
-[GPL v3] (SpectralCover/LICENSE.txt)
+[GPL v3] (Yin/LICENSE.txt)
 
 
 ## Authors
