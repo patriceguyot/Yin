@@ -1,6 +1,6 @@
 # Yin
 
-Fast Python Implementation of the Yin algorithm: a fundamental frequency estimator.
+Fast Python implementation of the Yin algorithm: a fundamental frequency estimator.
 
 Based on the article:
 
