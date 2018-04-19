@@ -26,4 +26,10 @@ All parameters (i.e frequence min, frequence max, harmonic threshold) in the yin
 
 Patrice Guyot
 
+[![DOI](https://zenodo.org/badge/130074493.svg)](https://zenodo.org/badge/latestdoi/130074493)
+
+If you use this code, please cite:
+Patrice Guyot. (2018, April 19). Fast Python implementation of the Yin algorithm (Version v1.1.1). Zenodo. http://doi.org/10.5281/zenodo.1220947
+
+
 Previous works on the implementation of the YIN algorithm have been made thanks to Robin Larvor, Maxime Le Coz and Lionel Koenig.
