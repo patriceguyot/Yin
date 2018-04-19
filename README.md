@@ -6,7 +6,7 @@ Based on the article:
 
 \[1\] De Cheveigné, A., & Kawahara, H. (2002). YIN, a fundamental frequency estimator for speech and music. The Journal of the Acoustical Society of America, 111(4), 1917-1930.
 
-All the functions in the code correspond to step in the article \[1\]. Meanwhile, the difference function has been modify substantially in order to improve speed. Finally, speed have been improved by more than 1000x.
+All the functions in the code correspond to steps in the article \[1\]. Meanwhile, the difference function has been modify substantially in order to improve speed. Finally, speed has been improved by more than 1000x.
 
 
 ## Prerequisites
@@ -19,7 +19,7 @@ All the functions in the code correspond to step in the article \[1\]. Meanwhile
 
 $python yin.py
 
-All parameters (i.e frequence min, frequence max, harmonic threshold) in the yin.py function should be adapted to obtain good results.
+All parameters (i.e frequence min, frequence max, harmonic threshold) in the yin.py function should be adapted to obtain good results. See the article \[1\] for more details. 
 
 
 ## Authors
