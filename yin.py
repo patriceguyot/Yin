@@ -12,7 +12,7 @@ __version__ = "1.1.0"
 ***********************************************************************
 Name            : yin.py
 Description     : Fundamental frequency estimation. Based on the YIN alorgorithm [1]: De Cheveigné, A., & Kawahara, H. (2002). YIN, a fundamental frequency estimator for speech and music. The Journal of the Acoustical Society of America, 111(4), 1917-1930.
-Author          : Patrice Guyot. Previous works on the implementation of the YIN algorithm have been made at IRIT thanks to Robin Larvor, Maxime Le Coz and Lionel Koenig.
+Author          : Patrice Guyot. Previous works on the implementation of the YIN algorithm have been made thanks to Robin Larvor, Maxime Le Coz and Lionel Koenig.
 ***********************************************************************
 
 """
@@ -166,7 +166,7 @@ def compute_yin(sig, sr, dataFileName=None, w_len=512, w_step=256, f0_min=100, f
     :rtype: tuple
     """
 
-    print('\t- Yin: compute yin algorithm')
+    print('Yin: compute yin algorithm')
     tau_min = int(sr / f0_max)
     tau_max = int(sr / f0_min)
 
@@ -197,12 +197,12 @@ def compute_yin(sig, sr, dataFileName=None, w_len=512, w_step=256, f0_min=100, f
 
     if dataFileName is not None:
         np.savez(dataFileName, times=times, sr=sr, w_len=w_len, w_step=w_step, f0_min=f0_min, f0_max=f0_max, harmo_thresh=harmo_thresh, pitches=pitches, harmonic_rates=harmonic_rates, argmins=argmins)
-        print('\t\t- Data file written in: ' + dataFileName)
+        print('\t- Data file written in: ' + dataFileName)
 
     return pitches, harmonic_rates, argmins, times
 
 
-def main(audioFileName="out.wav", w_len=1024, w_step=256, f0_min=70, f0_max=200, harmo_thresh=0.85, audioDir="./", dataFileName=None, verbose=4):
+def main(audioFileName="whereIam.wav", w_len=1024, w_step=256, f0_min=70, f0_max=200, harmo_thresh=0.85, audioDir="./", dataFileName=None, verbose=4):
     """
     Run the computation of the Yin algorithm on a example file.
 
@@ -238,7 +238,7 @@ def main(audioFileName="out.wav", w_len=1024, w_step=256, f0_min=70, f0_max=200,
     start = time.time()
     pitches, harmonic_rates, argmins, times = compute_yin(sig, sr, dataFileName, w_len, w_step, f0_min, f0_max, harmo_thresh)
     end = time.time()
-    print("Yin computed in : ", end - start)
+    print "Yin computed in: ", end - start
 
     duration = len(sig)/float(sr)
 
